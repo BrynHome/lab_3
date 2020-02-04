@@ -1,66 +1,33 @@
 <html>
     <head>
+        
         <title>
             Artist Directory
         </title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <script type="text/javascript" src="script.js"></script>
         <div id="main">
         <div id = "header" class="border">
             <div id="title">
                 <h2 class="indent">Artist Directory</h2>
             </div>
             <div id = "title"><input id = "search" class="indent">
+                <button id = "add" onclick="initInput()">Add artist</button>
             </div>
         </div>
-        <div id = "profiles">
-            <div class = "profile border">
-                <div class="thumb">
-                    <img src="1.jpg" class="profilepic">
-                </div>
-                <div class = "content">
-                    <h3 class = "name">Tina Halls</h3>
-                    <p class = "descrip">Sculptor</p>
-                </div>   
-            </div>
-            <div class = "profile border">
-                <div class="thumb">
-                    <img src="55.jpg" class="profilepic">
-                </div>
-                <div class = "content">
-                    <h3 class = "name">Quinn Anders</h3>
-                    <p class = "name">Actor</p>
-                </div>   
-            </div>
-            <div class = "profile border">
-                <div class="thumb">
-                    <img src="2.jpg" class="profilepic">
-                </div>
-                <div class = "content">
-                    <h3 class = "name">Karren Yates</h3>
-                    <p class = "descrip">Director of the Fine Arts University of Alberta</p>
-                </div>    
-            </div>
-            <div class = "profile border">
-                <div class="thumb">
-                    <img src="26.jpg" class="profilepic">
-                </div>
-                <div class = "content">
-                    <h3 class = "name">Ricardo Libido</h3>
-                    <p class = "descrip">Director</p>
-                </div>   
-            </div>
-            <div class = "profile border">
-                <div class="thumb">
-                    <img src="76.jpg" class="profilepic">
-                </div>
-                <div class = "content">
-                    <h3 class = "name">Michelle Brotsworth</h3>
-                    <p class = "descrip">Set Designer</p>
-                </div>   
-            </div>
+        <div>
+            <form id="descripInput" class>
+                <input id="nameInput" class="in" maxlength="40" placeholder="Enter Name"><br>
+                <input id="artistInput" class="in" maxlength="40" placeholder="About Artist"><br>
+                <input id="imageUrl" class="in" placeholder="Image URL"><br>
+                <button id = "inButton"  type ="button" onclick="submitInput()" class="in" value="Add">Add</button>
+            </form>
         </div>
-        </div>
+        <ul id = "profiles">
+            
+        </ul>
+        
     </body>
 </html>

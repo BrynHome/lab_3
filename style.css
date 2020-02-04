@@ -1,16 +1,32 @@
 #header {
     height: 100px;
-    width: 400px;
+    width: 50%;
     position: relative;
 }
 
 input {
-    width: 80%;
+    width: 70%;
 }
 
 #title {
     width: 50%;
     height: 50%;
+}
+
+#add {
+    width: 75px;
+    height: 25px;
+    position: absolute;
+    right: 5%;
+    
+}
+
+#descripInput {
+    display: none;
+    align-content: center;
+    width: 35%;
+    max-width: 35%;
+    margin: auto;
 }
 
 .border {
@@ -24,9 +40,22 @@ input {
 .profile {
     
     position: relative;
-    height: 70px;
-    width: 320px;
+    height: 9%;
+    min-height: 70px;
+    width: 45%;
 }
+
+.in {
+    text-align: center;
+    position: relative;
+    height: 5%;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .thumb {
     float: left;
 }
@@ -43,18 +72,48 @@ input {
 
 .content {
     position: absolute;
-    margin-left: 58px;
+    margin-left: 85px;
     height: 70px;
+}
+
+#inButton {
+    width: 65%;
+    margin-left: 17.5%;
+    margin-top: 3px;
+    background-color: darkgray;
+}
+
+ul {
+    display: inline-block;
+    padding-inline-start: 0px;
+    width: 100%;
+    margin-top: 1.2px;
+}
+
+.deleteButton {
+    width: 60px;
+    height: 38px;
+    border-radius: 7px;
+    border-color: red;
+    color: white;
+    
+    background-color: red;
+}
+.deletion {
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 80%;
 }
 
 .profilepic {
     border-radius: 5px;
     display: block;
     position: absolute;
-    margin-right: 15px;
+    margin-right: 6%;
     top: 10%;
-    left:  3%;
-    height: 48px;
-    width: 48px;
+    left:  10px;
+    height: 80%;
+    width: 20%;
+    max-width: 65px;
 }
 
